@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="#0094ff" name="theme-color" />
+  <meta content="Iuri Silva 2023" name="copyright" />
+  <meta content="pt-br" http-equiv="content-language" />
+  <meta content="assets/image/preview.png" property="og:image" />
+  <meta content="Steam (Redesign)" property="og:title" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/image/logo-steam.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="assets/image/logo-steam.png" rel="icon" />
+  <link href="assets/image/logo-steam.png" rel="apple-touch-icon" />
+  <title>Steam (Redesign)</title>
+</head>
+
+<body>
+  <div class="barra-progresso-horizontal" id="barraProgresso"></div>
+  <header id="s-menu">
+    <nav>
+      <img alt="Logo da Steam" src="assets/image/logo-steam.png" />
+      <ul>
+        <li><a href="#">Loja</a></li>
+        <li><a href="#">Biblioteca</a></li>
+        <li><a href="#">Comunidade</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="www.arqware.com.br">ArqWare</a></li>
+
+      </ul>
+    </nav>
+    <div>
+      <div id="notifications">
+        <a href="#" id="bell">
+          <div></div>
+          <img alt="Ícone sino" src="assets/image/bell.png" />
+        </a>
+        <a href="#">
+          <img alt="Ícone mensagem" src="assets/image/message-circle.png" />
+        </a>
+      </div>
+      <a href="www.arqware.com.br">
+        <div id="profile"><img alt="Logo" src="assets/image/profile.png"/>
+        </div>
+      </a>
+    </div>
+  </header>
+  <main>
+    <header id="s-carrossel">
+      <article>
+        <div class="slider">
+          <div class="slides">
+            <input id="radio1" name="radio-btn" type="radio" />
+            <input id="radio2" name="radio-btn" type="radio" />
+            <input id="radio3" name="radio-btn" type="radio" />
+            <input id="radio4" name="radio-btn" type="radio" />
+            <div class="slide banner-1 first">
+              <div class="bg-cover-dark"></div>
+              <div class="grid-layout-banner">
+                <img alt="Logo Red Dead" src="assets/image/logo-red-dead.png" />
+                <p>
+                  Estados Unidos, 1899. O fim da era do velho oeste começou, e
+                  as autoridades estão caçando as últimas gangues de fora da
+                  lei que restam. Os que não se rendem, nem sucumbem, são
+                  mortos.
+                </p>
+                <a href="#"><button>compre agora</button></a>
+              </div>
+            </div>
+            <div class="slide banner-2">
+              <div class="bg-cover-dark"></div>
+              <div class="grid-layout-banner">
+                <img alt="Logo Dead by Daylight" src="assets/image/dead-by-daylight.png" />
+                <p>
+                  Dead by Daylight é um jogo eletrônico multijogador online
+                  assimétrico de survival horror desenvolvido pela Behaviour
+                  Interactive.
+                </p>
+                <a href="#"><button>saiba mais</button></a>
+              </div>
+            </div>
+            <div class="slide banner-3">
+              <div class="bg-cover-dark"></div>
+              <div class="grid-layout-banner">
+                <img alt="Logo The Last of Us" src="assets/image/the-last-of-us.png" />
+                <p>
+                  The Last of Us é uma franquia situada em um mundo
+                  pós-apocalíptico, com seres humanos hostis e criaturas
+                  canibais infectadas por uma mutação do fungo cordyceps.
+                </p>
+                <a href="#"><button>assistir trailer</button></a>
+              </div>
+            </div>
+            <div class="slide banner-4">
+              <div class="bg-cover-dark"></div>
+              <div class="grid-layout-banner">
+                <img alt="Logo Assassin's Creed" src="assets/image/assassins-creed.png" />
+                <p>
+                  A série de jogos Assassin's Creed, ao contrário da violência
+                  do conflito entre os grupos do game (assassinos e
+                  templários), mostra a evolução da sociedade humana como
+                  cenário dos jogos.
+                </p>
+                <a href="#"><button>comprar na pré-venda</button></a>
+              </div>
+            </div>
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+          </div>
+          <div class="manual-navigation">
+            <label for="radio1"></label>
+            <label for="radio2"></label>
+            <label for="radio3"></label>
+            <label for="radio4"></label>
+          </div>
+        </div>
+      </article>
+    </header>
+    <section id="s-filter">
+      <div class="grid-layout">
+        <nav id="menu-filter">
+          <ul>
+            <li><a href="#">Novidades e tendências</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Loja de pontos</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Laboratório</a></li>
+          </ul>
+        </nav>
+        <div id="container-input">
+          <input placeholder="Buscar jogo" type="text" />
+        </div>
+        <div id="cards-filter">
+          <div>
+            <div></div>
+            <img alt="Logo Farcry" src="assets/image/logo-farcry.png" />
+          </div>
+          <div>
+            <div></div>
+            <img alt="Logo Forza" src="assets/image/logo-forza.png" />
+          </div>
+          <div>
+            <div></div>
+            <img alt="Logo Fifa" src="assets/image/logo-fifa.png" />
+          </div>
+          <div>
+            <div></div>
+            <img alt="Logo Minecraft" src="assets/image/logo-minecraft.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s-navigation">
+      <div class="grid-layout">
+        <h2>Navegar pela Steam</h2>
+        <nav>
+          <ul>
+            <a href="#">
+              <li>Lançamentos</li>
+            </a>
+            <a href="#">
+              <li>Ofertas</li>
+            </a>
+            <a href="#">
+              <li>Jogos gratuitos</li>
+            </a>
+            <a href="#">
+              <li>Mais vendidos</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id="s-category">
+      <div class="grid-layout">
+        <h2>Explore por categoria</h2>
+        <div id="category-list">
+          <article>
+            <div>
+              <div></div>
+              <img alt="Capa Assassin's Creed" src="assets/image/5.png" />
+            </div>
+            <h3>Assassin's Creed Valhalla</h3>
+            <span>
+              <p id="category-value">-10%</p>
+              <p id="category-value-old">R$ 100,00</p>
+              <p>R$ 90,00</p>
+            </span>
+          </article>
+          <article>
+            <div>
+              <div></div>
+              <img alt="Capa GTA5" src="assets/image/6.png" />
+            </div>
+            <h3>Grand Theft Auto V</h3>
+            <span>
+              <p id="category-value">-10%</p>
+              <p id="category-value-old">R$ 100,00</p>
+              <p>R$ 90,00</p>
+            </span>
+          </article>
+          <article>
+            <div>
+              <div></div>
+              <img alt="Capa Minecraft" src="assets/image/7.png" />
+            </div>
+            <h3>Minecraft</h3>
+            <span>
+              <p id="category-value">-10%</p>
+              <p id="category-value-old">R$ 100,00</p>
+              <p>R$ 90,00</p>
+            </span>
+          </article>
+          <article>
+            <div>
+              <div></div>
+              <img alt="Capa Detroit Become Human" src="assets/image/8.png" />
+            </div>
+            <h3>Detroit Become Human</h3>
+            <span>
+              <p id="category-value">-10%</p>
+              <p id="category-value-old">R$ 100,00</p>
+              <p>R$ 90,00</p>
+            </span>
+          </article>
+          <article>
+            <div>
+              <div></div>
+              <img alt="Capa Fall Guys" src="assets/image/9.png" />
+            </div>
+            <h3>Fall Guys</h3>
+            <span>
+              <p id="category-value">-10%</p>
+              <p id="category-value-old">R$ 100,00</p>
+              <p>R$ 90,00</p>
+            </span>
+          </article>
+          <article>
+            <div>
+              <div></div>
+              <img alt="Capa God of War" src="assets/image/10.png" />
+            </div>
+            <h3>God of War</h3>
+            <span>
+              <p id="category-value">-10%</p>
+              <p id="category-value-old">R$ 100,00</p>
+              <p>R$ 90,00</p>
+            </span>
+          </article>
+          <article>
+            <div>
+              <div></div>
+              <img alt="Capa Cyberpunk 2077" src="assets/image/11.png" />
+            </div>
+            <h3>Cyberpunk 2077</h3>
+            <span>
+              <p id="category-value">-10%</p>
+              <p id="category-value-old">R$ 100,00</p>
+              <p>R$ 90,00</p>
+            </span>
+          </article>
+          <article>
+            <div>
+              <div></div>
+              <img alt="Capa Ghostwire: Tokyo" src="assets/image/12.png" />
+            </div>
+            <h3>Ghostwire: Tokyo</h3>
+            <span>
+              <p id="category-value">-10%</p>
+              <p id="category-value-old">R$ 100,00</p>
+              <p>R$ 90,00</p>
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="s-games-free">
+      <div class="grid-layout">
+        <h2>Jogos gratuitos</h2>
+        <div class="layout-games-free">
+          <article>
+            <div class="container-image">
+              <img alt="Capa Stardew Valley" src="assets/image/13.png" />
+            </div>
+            <div class="container-content">
+              <h3>Stardew Valley</h3>
+              <p>Oferta válida até 19 de abr. às 14h</p>
+              <span>
+                <p id="category-value">-100%</p>
+                <p id="category-value-old">R$ 100,00</p>
+                <p>R$ 0,00</p>
+              </span>
+            </div>
+          </article>
+          <article>
+            <div class="container-image">
+              <img alt="Capa Hogwarts Legacy" src="assets/image/14.png" />
+            </div>
+            <div class="container-content">
+              <h3>Hogwarts Legacy</h3>
+              <p>Oferta válida até 19 de abr. às 14h</p>
+              <span>
+                <p id="category-value">-100%</p>
+                <p id="category-value-old">R$ 100,00</p>
+                <p>R$ 0,00</p>
+              </span>
+            </div>
+          </article>
+          <div>
+            <article>
+              <div class="container-image">
+                <img alt="Capa Stay" src="assets/image/15.png" />
+              </div>
+              <div class="container-content">
+                <h3>Oferta do dia!</h3>
+                <span>
+                  <p id="category-value">-100%</p>
+                  <p>R$ 0,00</p>
+                </span>
+              </div>
+            </article>
+            <article>
+              <div class="container-image">
+                <img alt="Capa Raft" src="assets/image/16.png" />
+              </div>
+              <div class="container-content">
+                <h3>Oferta do dia!</h3>
+                <span>
+                  <p id="category-value">-100%</p>
+                  <p>R$ 0,00</p>
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="grid-layout">
+      <p>
+        Copyright © 2025
+        <a href="https://www.arqware.com.br/" rel="noopener" target="_blank">
+          ArqWare.com
+        </a>
+        Todos os direitos reservados.
+      </p>
+
+      <div>
+        <p>Powered by</p>
+        <a href="https://www.arqware.com.br/">
+            <img src="assets/image/logo-page.png" alt="Logo ArqWare">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/index.js" type="module"></script>
+
+  <script>
+    const barra = document.getElementById('barraProgresso');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      barra.style.width = scrollPercent + 'vw';
+    });
+  </script>
+</body>
+
+</html>

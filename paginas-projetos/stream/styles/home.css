@@ -1,0 +1,323 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #07090F;
+}
+
+.container {
+    background-image: url('../images/bg-home2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 716px){
+    header .content.welcome .items {
+        display: block;
+    }
+ 
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .content.welcome {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 0;    
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+}
+
+header .content.welcome .logo {
+    margin-right: 6rem;
+}
+
+header .content.welcome a {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.1em;
+    transition: .5s;
+}
+
+header .content.welcome a:nth-child(n+2){
+    margin-right: 2rem;
+    transition: all .2s ease-in-out; 
+}
+
+header .content.welcome a:nth-child(n+2):hover {
+    color: #FEC63E;
+    transform: scale(1.1); 
+}
+
+header .content.welcome a i {
+    padding-right: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border: .1rem solid #000;
+    border-radius: .8rem;
+    padding: 1rem 2.5rem; 
+    margin-right: 2rem;
+}
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin-right: 1rem;
+  }
+
+.input-search{
+    height: 5rem;
+    width: 5rem;
+    border-style: none;
+    padding: 1rem;
+    outline: none;
+    transition: all .5s ease-in-out;
+    background: transparent;
+    padding-right: 4rem;
+    color:#FEC63E;
+    font-family: 'Poppins';
+}
+
+.input-search::placeholder{
+    color:#fff;
+    font-size: 1.2rem;
+    letter-spacing: .1em;
+    font-weight: 600;
+}
+
+.btn-search{
+    width: 5rem;
+    height: 5rem;
+    border-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#FEC63E;
+    background-color:transparent;
+    pointer-events: painted;  
+}
+
+
+.btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid #fec63e;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus{
+    width: 300px;
+    border-radius: .8rem;
+    background-color: transparent;
+    border: .2rem solid rgba(0, 0, 0, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.profile {
+    background-image: url('../images/foto-monteirodev.png');
+    background-size: cover;
+    width: 4.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out; 
+}
+
+.profile:hover {
+    transform:scale(1.2);
+}
+
+/* Section */
+
+section {
+    display: flex;
+    justify-content: center;
+    
+}
+
+section .content.home {
+    padding-top: 12rem;
+}
+
+section .description {
+    padding-bottom: 2.7rem;
+}
+
+section .description img {
+    display: block;
+    margin-bottom: 3rem;
+    max-width: 100%;
+}
+
+section .description p {
+    display: inline;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+section .description p:nth-child(3) {
+    color: #FEC63E;
+}
+
+section .actions {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+section .actions a:nth-child(1) {
+    color: #000;
+    font-size: 1.8rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    padding: 1.2rem 6.5rem;
+    border-radius: 3rem;
+    background-color: #fff;
+    text-transform: uppercase;
+    margin-right: 4rem;
+    transition: all .2s ease-in-out; 
+}
+
+section .actions a:nth-child(1):hover {
+    transform: scale(1.1);
+    background-color: #FEC63E;
+}
+
+section .actions a:nth-child(2) {
+    display: flex;
+    transition: all .2s ease-in-out; 
+    
+}
+
+section .actions a:nth-child(2):hover {
+    transform: scale(1.1);
+}
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #0c0b16;
+    color: #fff;
+    padding: 24px 0px;
+  }
+  footer .grid-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  footer p {
+    font-size: 1.8rem;
+  }
+  footer p a {
+    font-weight: 500;
+    color: #986dff;
+  }
+  footer img {
+    width: 32px;
+  }
+  footer div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  @media screen and (max-width: 1200px) {
+    footer .grid-layout {
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 48px;
+    }
+    footer .grid-layout div {
+      display: none;
+    }
+  }
+  .typewriter:after {
+    content: "|";
+    margin-left: 8px;
+    opacity: 1;
+    animation: blink 1s infinite;
+    color: #986dff;
+  }
+  @keyframes blink {
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .grid-layout {
+    max-width: 1140px;
+    margin: 0 auto;
+  } /*# sourceMappingURL=style.css.map */
+  
+@media (max-width: 768px) {
+  .movie-card, .tv-show-card {
+    width: 100%;
+  }
+
+  .stream-header, .stream-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stream-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  header, nav, footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container, .content, .main, .section, .card, .movie, .tv-show {
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel, .grid, .flex {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

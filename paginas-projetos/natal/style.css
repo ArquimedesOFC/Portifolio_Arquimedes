@@ -1,0 +1,1002 @@
+/* === VARIÁVEIS E BASE === */
+:root {
+    --vermelho: #c62828;
+    --verde: #1b5e20;
+    --dourado: #f9a825;
+    --branco: #ffffff;
+    --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --sombra-intensa: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-image: url('imagens/ARTE-NATAL-SOLIDARIO-FUNDO-SITE.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: var(--verde);
+}
+
+/* Para o arquivo cartas.html */
+body.cartas {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #ffffff; /* Fundo branco apenas no cartas.html */
+    color: var(--verde);
+}
+
+
+
+/* === CABEÇALHO === */
+header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: var(--vermelho);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu-link {
+    background: var(--branco);
+    position: relative;
+    color: var(--vermelho);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: var(--vermelho);
+    color: white;
+}
+
+/* === HERO === */
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.elementor-button {
+    
+    background: var(--verde);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.4s ease;
+    display: inline-block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.elementor-button::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.6s ease;
+    transform: translateX(-50%);
+}
+
+
+
+.elementor-button:hover::after {
+    width: 50%;
+}
+
+@keyframes cloudFloat {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* === SEÇÕES === */
+section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: var(--vermelho);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+section p,
+section h5 {
+    margin-bottom: 1rem;
+}
+
+
+/* === PASSOS === */
+.passos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.passo {
+    flex: 1 1 200px;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.passo img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+/* === MAPA === */
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* === RODAPÉ === */
+
+
+footer a {
+    color: inherit;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--verde);
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner h1,
+    .banner p {
+        position: relative;
+        z-index: 2;
+    }
+
+        .adote-carta {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .adote-carta .texto {
+        max-width: 100%;
+    }
+
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.card h3 {
+    color: #C01D18;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+}
+
+.btn-voltar {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 0.75rem 1.5rem;
+    background-color: #008148;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #006636;
+}
+
+
+/* === LOGO === */
+.logo {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* === TÍTULOS E INTRODUÇÃO === */
+.intro {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.intro h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: var(--vermelho);
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 400;
+}
+
+/* === CARDs === */
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 80px;
+    height: 80px;
+    background: var(--vermelho);
+    transform: rotate(45deg);
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(90, 90, 90, 0.2);
+}
+
+
+
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* === BOTÃO VOLTAR === */
+.btn-voltar {
+    margin-top: 3rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* === RODAPÉ === */
+footer {
+    background: var(--vermelho);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: 300% 300%;
+    animation: shineFooter 8s ease infinite;
+}
+
+section {
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.card {
+    padding: 10px;
+    position: relative; /* Adicione isso para o ::before e ::after funcionarem corretamente */
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--vermelho), var(--verde));
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+section h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: var(--verde);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.intro h1::before {
+    content: "🎄 ";
+}
+
+footer::before {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.snowflake {
+    color: #00ffb3;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -10%;
+    animation: snow 10s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes snow {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.snowflake:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+    font-size: 2em;
+}
+
+.snowflake:nth-child(3) {
+    left: 35%;
+    animation-delay: 4s;
+}
+
+.snowflake:nth-child(4) {
+    left: 50%;
+    animation-delay: 1s;
+    font-size: 1.2em;
+}
+
+.snowflake:nth-child(5) {
+    left: 65%;
+    animation-delay: 3s;
+}
+
+.snowflake:nth-child(6) {
+    left: 80%;
+    animation-delay: 5s;
+    font-size: 1.8em;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+
+.mensagem-destaque {
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: destaqueFadeIn 1.2s ease;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.mensagem-destaque h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #fffbe6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mensagem-destaque p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes destaqueFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.somos-bytehug {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 3rem;
+}
+
+.somos-bytehug h2 {
+    color: var(--verde);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.somos-bytehug p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin: 1 auto;
+}
+
+.somos-bytehug .btn {
+    background-color: var(--verde);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--vermelho);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.somos-bytehug .btn:hover {
+    background-color: #006636;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.adote-carta {
+    background-color: var(--vermelho);
+    /* Retângulo vermelho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    margin: 4rem auto;
+    /* Centraliza a seção */
+    color: white;
+    border-radius: 10px;
+    max-width: 1200px;
+    /* Limita a largura máxima */
+}
+
+.adote-carta .texto {
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 60%;
+    /* Para garantir que o texto fique proporcional */
+}
+
+.adote-carta .btn {
+    background-color: white;
+    color: var(--vermelho);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.adote-carta .btn:hover {
+    background-color: var(--vermelho);
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#local-entrega .mapa .maptext {
+    color: #ffffff;
+    text-align: center;
+    padding: 1%;
+}
+
+#local-entrega .mapa {
+    background-color: var(--verde);
+    /* Fundo verde */
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+#local-entrega iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+#datas-importantes {
+    
+    background: #fffefe;
+    border-radius: 12px;
+    box-shadow: 10 40px 120px rgba(0, 0, 0, 0.05);
+
+    padding: 3rem ;
+    margin-top: 6rem;
+}
+
+#datas-importantes h3 {
+    font-size: 2rem;
+    color: #e63946;
+    /* Cor vermelha (temática natalina) */
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#datas-importantes .data-item {
+    display: flex;
+    align-items: center;
+    background: #fefefe;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#datas-importantes .data-item h4 {
+    font-size: 1.25rem;
+    color: #2d2d2d;
+}
+
+#datas-importantes .data-item p {
+    font-size: 1.1rem;
+    color: #2d2d2d;
+}
+
+#datas-importantes .data-item .icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Adicionando ícones temáticos */
+#datas-importantes .data-item.inicio-campanha {
+    border-left: 5px solid #2a9d8f;
+    /* Cor para início de campanha */
+}
+
+#natal-sonhos {
+    background-color: #f1faee;
+    /* Fundo suave de Natal */
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin-top: 3rem;
+}
+
+#natal-sonhos h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #e63946;
+    /* Vermelho natalino */
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    /* Efeito de sombra suave no título */
+}
+
+.nav-bar ul li a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.submensagem {
+    font-size: 1.25rem;
+    color: #5c3b3b;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.botao-adocao {
+    background-color: #8B0000;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+.botao-adocao:hover {
+    background-color: #6a0000;
+}
+
+.datas-importantes {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.titulo-datas {
+    font-size: 2.5rem;
+    color: #8B0000;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.cartoes-datas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cartao-data {
+    background: #fff;
+    border: 2px solid #e9d9cb;
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cartao-data:hover {
+    transform: translateY(-5px);
+}
+
+.icone-data {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.cartao-data h3 {
+    font-size: 1.25rem;
+    color: #006400;
+    /* verde natal */
+    margin-bottom: 10px;
+}
+
+.cartao-data p {
+    font-size: 1.1rem;
+    color: #3b1f1f;
+}
+
+.background-bege {
+    
+    background-color: #ffffff;
+    /* Cor bege */
+
+}
+
+
+.background-vermelho {
+  background: var(--vermelho);
+  max-height: 180px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+
+.btn,
+.menu-link {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn {
+    background: linear-gradient(135deg, var(--verde), #43a047);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 40px;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.elementor-button:hover,
+.btn:hover {
+    background: linear-gradient(135deg, var(--vermelho), #e53935);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.fundo {
+    background-color: var(--branco);
+    margin-top: 0px;
+    padding: 3rem;
+    
+}
+
+.menu-link:hover,
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.sobre, #acolhidos {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  color: #333;
+  padding: 2%;
+  color: var(--verde);
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+
+}
+.intro h1 {
+    animation: shineTitle 3s infinite alternate;
+}
+
+@keyframes shineTitle {
+    from {
+        text-shadow: 0 0 5px var(--dourado), 0 0 10px var(--dourado);
+    }
+    to {
+        text-shadow: 0 0 15px var(--dourado), 0 0 30px var(--dourado);
+    }
+}
+
+
+/* Responsividade - Ajustes para telas menores */
+@media (max-width: 480px) {
+
+      .background-vermelho {
+    padding: 1rem 0.5rem;
+    max-height: none; /* Remove limitação de altura se necessário */
+    flex-direction: column; /* Empilha o conteúdo */
+    gap: 1rem; /* Espaçamento entre elementos empilhados */
+  }
+  .intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .btn-voltar {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+
+
+    .intro p.subtitulo {
+        font-size: 1rem;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .btn-voltar {
+        padding: 8px 12px;
+    }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--vermelho);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra-intensa);
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+

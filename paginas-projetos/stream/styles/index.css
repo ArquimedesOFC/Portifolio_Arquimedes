@@ -1,0 +1,283 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.container {
+    background-image: url('../images/bg-welcome.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+header .content.welcome {
+    padding: 2.5rem 0;    
+}
+
+section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+section .content.welcome {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    padding-top: 10rem;
+}   
+
+section .welcome h1 {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 2em;
+    letter-spacing: 0.18em;
+    text-align: center;
+    
+}
+
+section .welcome p {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-align: center;
+    padding-bottom: 4.3rem;
+}
+
+section .welcome a {
+    display: flex;
+    background-color: #fff;
+    padding: 0.9rem 17rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    border-radius: .8rem;
+    align-items: center;
+    transition: .2s;
+    border: .2rem solid #fff;
+    transition: all .2s ease-in-out; 
+}
+
+section .welcome a i {
+    padding-left: 1rem;
+    
+}
+
+section .welcome a:hover {
+    transform: scale(1.1);
+    background-color: #fec63e;
+    border-color: #fec63e;
+} 
+
+section .welcome-image {
+   cursor: pointer;
+   transition: .3s;
+}   
+
+section .welcome-image:hover {
+    transform: scale(1.1);
+}   
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #0c0b16;
+    color: #fff;
+    padding: 24px 0px;
+  }
+  footer .grid-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  footer p {
+    font-size: 1.8rem;
+  }
+  footer p a {
+    font-weight: 500;
+    color: #986dff;
+  }
+  footer img {
+    width: 32px;
+  }
+  footer div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  @media screen and (max-width: 1200px) {
+    footer .grid-layout {
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 48px;
+    }
+    footer .grid-layout div {
+      display: none;
+    }
+  }
+  .typewriter:after {
+    content: "|";
+    margin-left: 8px;
+    opacity: 1;
+    animation: blink 1s infinite;
+    color: #986dff;
+  }
+  @keyframes blink {
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .grid-layout {
+    max-width: 1140px;
+    margin: 0 auto;
+  } /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 768px) {
+  .movie-card, .tv-show-card {
+    width: 100%;
+  }
+
+  .stream-header, .stream-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stream-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+  
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  header, nav, footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container, .content, .main, .section, .card, .movie, .tv-show {
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel, .grid, .flex {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* Responsividade para index.html */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+
+  nav,
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main, .section, .highlight, .content, .info {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .highlight img,
+  .banner img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+  .welcome,
+  .presentation,
+  .intro,
+  .content {
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 10px;
+    max-width: 90%;
+    line-height: 1.6;
+  }
+
+  .continue-button,
+  .btn-continue,
+  button.continue {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #ff3c00; /* ou a cor original do botão */
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .continue-button:hover,
+  .btn-continue:hover,
+  button.continue:hover {
+    background-color: #cc3100;
+  }
+

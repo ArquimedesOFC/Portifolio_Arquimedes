@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+/* .carrossel-movie.content-home {
+   width: 90%;
+}
+
+.carrossel.home {
+   display: flex;
+   justify-content: flex-end;
+} */
+
+.content {
+    width: 80%;
+}
+
+.carrossel.home{
+    padding-bottom: 6rem;
+    padding-left: 15rem;
+}
+
+.carrossel.home p {
+    margin-left: 0;
+}
+
+.carrossel-movie p {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 4rem 0 1rem 0;
+    margin-left: 5rem;
+}
+
+.owl-carousel a img {
+    transition: all .2s ease-in-out; 
+    border-radius: 1.2rem;
+    
+}
+
+.owl-carousel a img:hover{
+    border: .4rem solid #fff;
+}
+
+
+
+.carrossel.home .owl-stage{padding-left:0px !important;}
+
+
+header .content.welcome a i {
+    padding-right: 0.5rem;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .movie-card, .tv-show-card {
+    width: 100%;
+  }
+
+  .stream-header, .stream-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stream-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  header, nav, footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container, .content, .main, .section, .card, .movie, .tv-show {
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel, .grid, .flex {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre - ArqWareTranslate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-dark: #4338ca;
+      --bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      --glass: rgba(255, 255, 255, 0.08);
+      --text-light: #f9fafb;
+      --text-dark: #1f2937;
+      --radius: 16px;
+      --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      --header-height: 80px;
+      --footer-height: 60px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    html {
+      height: 100%;
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text-light);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--header-height);
+      z-index: 999;
+    }
+
+    header h2 {
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin: 40px 0 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+
+    .content-box {
+      flex: 1;
+      padding: 20px;
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 800px;
+    }
+
+    .content-box h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .content-box p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: auto;
+      height: var(--footer-height);
+      position: relative;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <h2>🌐 ArqWareTranslate</h2>
+    </a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <h1>Sobre o Projeto</h1>
+
+  <div class="container">
+    <div class="content-box">
+      <h2>ArqWareTranslate: Um Projeto Open Source</h2>
+      <p>
+        O ArqWareTranslate é um projeto open source criado com o objetivo de auxiliar estudantes no aprendizado de
+        idiomas,
+        oferecendo uma plataforma de tradução simples, eficiente e fácil de usar. Nosso objetivo é proporcionar aos
+        usuários
+        a capacidade de traduzir textos rapidamente, com a possibilidade de traduzir partes de textos grandes e gerar um
+        histórico
+        de traduções para facilitar o estudo e a compreensão.
+      </p>
+      <p>
+        Este projeto foi desenvolvido com a intenção de ser uma ferramenta gratuita e acessível a todos, além de contar
+        com
+        uma interface limpa e intuitiva, adaptada para diferentes dispositivos. Acreditamos no poder do conhecimento
+        compartilhado
+        e por isso decidimos torná-lo open source, permitindo que qualquer pessoa possa contribuir, melhorar e expandir
+        a plataforma.
+      </p>
+      <p>
+        O ArqWareTranslate não é apenas um tradutor, mas uma plataforma de aprendizado colaborativo, onde estudantes
+        podem
+        acessar traduções precisas e recursos úteis para aprimorar seu aprendizado.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="grid-layout">
+      <p>
+        Copyright © 2025
+        <a href="https://www.arqware.com.br/" rel="noopener" target="_blank">
+          ArqWare.com
+        </a>
+        Todos os direitos reservados.
+      </p>
+
+      <div>
+        <p>Powered by</p>
+        <a href="https://www.arqware.com.br/">
+            <img src="logo-page.png" alt="Logo ArqWare">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
